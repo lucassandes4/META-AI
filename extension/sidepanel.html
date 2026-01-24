@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meta AI Batch Automation</title>
+    <link rel="stylesheet" href="sidepanel.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meta AI Batch</h1>
+      <p>Automatize uploads e downloads no Meta AI.</p>
+    </header>
+
+    <section>
+      <label class="field">
+        <span>Imagens</span>
+        <input id="imagePicker" type="file" accept="image/*" multiple />
+      </label>
+
+      <label class="field">
+        <span>Prompt</span>
+        <textarea id="promptInput" rows="3" placeholder="Ex.: Anime minha foto em estilo X"></textarea>
+      </label>
+
+      <label class="field">
+        <span>Tempo máximo por vídeo (segundos)</span>
+        <input id="timeoutInput" type="number" min="30" step="10" value="180" />
+      </label>
+
+      <div class="actions">
+        <button id="startBtn" class="primary">Start</button>
+        <button id="stopBtn" class="ghost" disabled>Stop</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Status</h2>
+      <ul id="log"></ul>
+    </section>
+
+    <script src="sidepanel.js"></script>
+  </body>
+</html>
