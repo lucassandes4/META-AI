@@ -7,9 +7,14 @@ Extensão Chrome (Manifest V3) para automatizar o envio de imagens e download de
 1. Abra `https://www.meta.ai` e navegue até o chat/projeto que gera vídeo a partir de imagem.
 2. Instale a extensão em modo desenvolvedor:
    - `chrome://extensions` → **Load unpacked** → selecione a pasta `extension`.
-3. Abra o side panel da extensão.
+3. Clique no ícone da extensão para abrir o side panel.
 4. Selecione as imagens, digite o prompt e ajuste o timeout.
 5. Clique em **Start** e mantenha a aba do Meta AI ativa.
+
+## Observações sobre o side panel
+
+- O side panel exige Chrome 114+.
+- O clique no ícone da extensão abre o painel automaticamente após a instalação.
 
 ## Como a automação funciona
 
