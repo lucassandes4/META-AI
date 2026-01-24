@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Meta AI Batch Video Automation",
+  "version": "0.1.0",
+  "description": "Automate image-to-video batches in Meta AI chats.",
+  "permissions": ["activeTab", "scripting", "downloads", "storage"],
+  "host_permissions": ["https://www.meta.ai/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.meta.ai/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Meta AI Batch Automation"
+  }
+}
